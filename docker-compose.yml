@@ -1,0 +1,6 @@
+services:
+  lab:
+    build: .
+    ports: ["5000:5000"]
+    # vulnerable mode by default; set SECURE=1 for the remediated behaviour.
+    environment: { FLASK_ENV: development }

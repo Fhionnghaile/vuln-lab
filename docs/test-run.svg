@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="847" height="440" viewBox="0 0 847 440" role="img" aria-label="vuln-lab — real test run, captured 24 Nov 2026">
+<rect width="847" height="440" rx="10" fill="#0f172a"/>
+<rect width="847" height="32" rx="10" fill="#1e293b"/><rect y="22" width="847" height="10" fill="#1e293b"/>
+<circle cx="18" cy="16" r="6" fill="#ef4444"/><circle cx="38" cy="16" r="6" fill="#f59e0b"/><circle cx="58" cy="16" r="6" fill="#22c55e"/>
+<text x="423.5" y="21" text-anchor="middle" font-family="ui-sans-serif,Segoe UI,Arial" font-size="12" fill="#cbd5e1">vuln-lab — real test run, captured 24 Nov 2026</text>
+<g font-family="ui-monospace,Consolas,Menlo,monospace" font-size="13">
+<text x="18" y="50" fill="#7dd3fc" xml:space="preserve">$ pip install -q -r app/requirements.txt pytest 2&gt;&amp;1 | tail -1; python -m pytest -v</text>
+<text x="18" y="68" fill="#e2e8f0" xml:space="preserve">============================= test session starts ==============================</text>
+<text x="18" y="86" fill="#e2e8f0" xml:space="preserve">platform linux -- Python 3.12.16, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/bin/python</text>
+<text x="18" y="104" fill="#e2e8f0" xml:space="preserve">collecting ... collected 7 items</text>
+<text x="18" y="122" fill="#e2e8f0" xml:space="preserve"></text>
+<text x="18" y="140" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_sqli_auth_bypass PASSED                     [ 14%]</text>
+<text x="18" y="158" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_idor PASSED                                 [ 28%]</text>
+<text x="18" y="176" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_reflected_xss PASSED                        [ 42%]</text>
+<text x="18" y="194" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_ssrf PASSED                                 [ 57%]</text>
+<text x="18" y="212" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_jwt_unverified PASSED                       [ 71%]</text>
+<text x="18" y="230" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_weak_password_hash PASSED                   [ 85%]</text>
+<text x="18" y="248" fill="#86efac" xml:space="preserve">tests/test_exploits.py::test_cvss_vectors_valid PASSED                   [100%]</text>
+<text x="18" y="266" fill="#e2e8f0" xml:space="preserve"></text>
+<text x="18" y="284" fill="#e2e8f0" xml:space="preserve">=============================== warnings summary ===============================</text>
+<text x="18" y="302" fill="#e2e8f0" xml:space="preserve">tests/test_exploits.py::test_jwt_unverified</text>
+<text x="18" y="320" fill="#e2e8f0" xml:space="preserve">  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:149: InsecureKeyLengthWarning: The HMAC key is…</text>
+<text x="18" y="338" fill="#e2e8f0" xml:space="preserve">    return self._jws.encode(</text>
+<text x="18" y="356" fill="#e2e8f0" xml:space="preserve"></text>
+<text x="18" y="374" fill="#e2e8f0" xml:space="preserve">-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html</text>
+<text x="18" y="392" fill="#86efac" xml:space="preserve">========================= 7 passed, 1 warning in 1.57s =========================</text>
+<text x="18" y="410" fill="#e2e8f0" xml:space="preserve">[exit 0]</text>
+</g></svg>

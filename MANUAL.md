@@ -11,6 +11,9 @@ A deliberately vulnerable web app, a professional penetration-test report on it,
 ## 3. Demo
 The report itself: `report/report.md` (rendered to `report/report.pdf`). Capture to record: the test run.
 
+![Real test run, captured 24 Nov 2026](docs/test-run.svg)
+*Real output from this repository's own tests, captured 24 Nov 2026.*
+
 ## 4. Run it yourself
 **Prerequisites:** Docker and Python 3.
 

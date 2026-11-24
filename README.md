@@ -4,7 +4,7 @@
 > **Six classic web flaws shown broken and fixed, with the professional report to match.**  
 > **Result:** 7 tests — each exploit works on the vulnerable build and is blocked on the fixed build; the CVSS v4.0 report renders to PDF.  
 > **Reproduce:** `pytest -q`  
-> ![CI](https://github.com/fhionnghaile/vuln-lab/actions/workflows/ci.yml/badge.svg)
+> ![CI](https://github.com/fhionnghaile/vuln-lab/actions/workflows/ci.yml/badge.svg) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Fhionnghaile/vuln-lab/badge)](https://scorecard.dev/viewer/?uri=github.com/Fhionnghaile/vuln-lab)
 >
 > **What this is worth:** Proves you can both find the flaw and communicate it in the artifact an auditor or client expects.
 

@@ -15,29 +15,29 @@ jobs:
       id-token: write
       attestations: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
       - name: Source archive
         run: git archive --format=tar.gz --prefix=vuln-lab-${{ github.ref_name }}/ -o vuln-lab-${{ github.ref_name }}.tar.gz HEAD
       - name: SBOM (SPDX)
-        uses: anchore/sbom-action@v0
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
         with:
           path: .
           format: spdx-json
           output-file: vuln-lab-${{ github.ref_name }}.spdx.json
           upload-artifact: false
       - name: Attest build provenance
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@e8998f949152b193b063cb0ec769d69d929409be # v2
         with:
           subject-path: vuln-lab-${{ github.ref_name }}.tar.gz
       - name: Attest SBOM
-        uses: actions/attest-sbom@v2
+        uses: actions/attest-sbom@bd218ad0dbcb3e146bd073d1d9c6d78e08aa8a0b # v2
         with:
           subject-path: vuln-lab-${{ github.ref_name }}.tar.gz
           sbom-path: vuln-lab-${{ github.ref_name }}.spdx.json
       - name: Publish release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
           files: |
             vuln-lab-${{ github.ref_name }}.tar.gz
